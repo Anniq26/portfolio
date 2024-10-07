@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* footer */
+.footercontainer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    /* gap: 500px; */
+    background-color: #111111;
+}
+
+/* footer info */
+.info{
+    font-family: Ubuntu sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27.58px;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* footer contacts */
+.contactswrapper{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 15px;
+}
+.contacttitle{
+    font-family: Ubuntu sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    text-align: left;
+    color: #fff;
+}
+
+.contactsinfo{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-family: Ubuntu sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 27.58px;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* footer soc-media icons */
+.imgiconsmainwrapper{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.imgiconwrapper{
+    width: 30px;
+    height: auto;
+}
+
+.iconimage{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px){
+    .footercontainer{
+        display: flex;
+        max-width: 1000px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}

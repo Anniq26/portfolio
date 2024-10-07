@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainpagewrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: fixed(1920px)px;
+    height: auto;
+}
+
+
+/* main section */
+.mainsection {
+    display: flex;
+    flex-direction: row;    align-items: center;
+    width: fixed(1650px)px;
+    height: auto;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+    border: solid 1px #0000004d;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 20px;
+}
+.imgmainstyle{
+    width: 500px;
+    height: auto;
+    /* border: solid 1px #00000096; */
+    border-radius: 15px;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+}
+
+.mainsectitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+}
+
+.maintitle{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 91.92px;
+    text-align: left;
+    color: #957554;
+    text-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+}
+
+.secondarytitle{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 5px 8px 15px #3f3225;
+}
+
+.mainsecbtn{
+    width: 371px;
+    height: 76px;
+    top: 603.76px;
+    left: 522.26px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #DFAA5B;
+    border-radius: 15px;
+    border: solid 1px #DFAA5B;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    cursor: pointer;
+}
+.mainsecbtn:hover{
+    cursor: pointer;
+    color: #DFAA5B;
+    background-color: #fff;
+
+
+}
+
+
+/* cards section */
+
+.cardssection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+
+.cardswrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cardstyle{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    border: solid 1px #000;
+    border-radius: 10px ;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+}
+
+.cardimg{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px ;
+}
+.cardtitle{
+    position: absolute;
+    bottom: 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: center;
+    width: 100%;
+    color: #FFF;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px ;
+
+}
+.overlay {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 7.48%, #000 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px ;
+}
+.cardstyle:hover .cardimg {
+    transform: scale(1.1); /* Scale image to 110% of its original size */
+
+}
+.cardstyle:hover .overlay,
+.cardstyle:hover .cardtitle {
+    opacity: 0; /* Fade out overlay and title on hover */
+}
+
+.buttonwrapper{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.seeallbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 418px;
+    height: 76px;
+    top: 2311px;
+    left: 511px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    text-align: left;
+    color: #FFF;
+    background-color: #DFAA5B;
+    border: solid 1px #DFAA5B ;
+    border-radius: 10px;
+}
+.seeallbutton:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #DFAA5B;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .mainpagewrapper,
+    .mainsection  {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .maintitle{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .imgmainstyle{
+        max-width: 50%;
+        height: auto;
+    }
+}
