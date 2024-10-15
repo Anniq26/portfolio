@@ -8,6 +8,7 @@
     display: flex;
     width: 100%;
     height: auto;
+    margin-bottom: 50px;
 }
 
 .header{
@@ -17,7 +18,8 @@
     justify-content: space-between;
     width: 100%;
     height: auto;
-    padding: 28px 110px;
+    padding: 5px 110px;
+    background-color: #000;
 }
 .imglogo{
     width: auto;
@@ -36,13 +38,14 @@
     text-decoration: none;
 }
 .headerlink {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'roboto slab', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 27.58px;
     text-align: left;
-    color: #957554;
-    /* text-shadow: 0 4px 8px rgba(0, 0, 0, 0.452); */
+    background: linear-gradient(60deg, #8b663c, #ecdf90, #8b663c); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    /* text-shadow: 0 4px 8px rgba(0, 0, 0, 0.452); */
 }
 .ChangeLanguage{
     display: flex;
@@ -65,6 +68,7 @@
         height: auto;
         display: flex;
         flex-direction: column;
+        gap: 30px;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -72,7 +76,7 @@
     .linkscontainer{
         display: flex;
         max-width: auto;
-        flex-direction: column;
+        /* flex-direction: column; */
         height: auto;
         flex-wrap: wrap;
         justify-content: center;

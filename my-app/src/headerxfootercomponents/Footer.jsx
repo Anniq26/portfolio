@@ -5,7 +5,7 @@ import imgInsta from '../style/insta.png';
 import imgFb from '../style/facebook.png';
 import imgLinkedin from '../style/linkedin.png';
 import imgGithub from '../style/25231 V2.png';
-import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { useTranslation } from 'react-i18next'; 
 
 
 
@@ -53,7 +53,7 @@ const Footer = () => {
                   </div>             
                 </Link>
               ))}
-              </div>
+              </div>              
     </div>
   )
 }

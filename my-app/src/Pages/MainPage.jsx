@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../mainpage.module.css';
-import imgMain from '../style/1700520198938.png';
+import imgMain from '../style/logoV2.png';
 import { Link } from 'react-router-dom';
 import {useTranslation} from 'react-i18next'
 import ImgPrjOne from '../style/6f9e7484-b76c-45e5-806d-f86b7f3f834c.jpg';
@@ -26,10 +26,10 @@ const MainPage = () => {
         <img className={styles.imgmainstyle} src={imgMain} alt="img" />
         <div className={styles.mainsectitles}>
           <h1 className={styles.maintitle}>{'<coder>'}</h1>
+          <h2 className={styles.secondarytitle}>{t('me')}</h2>
           <h2 className={styles.secondarytitle}>{t('maintext')}</h2>
-          <h2 className={styles.secondarytitle}>{t('maintext2')}</h2>
-          <Link to='/portfolio'>
-            <button className={styles.mainsecbtn}>{t('portfolio')}</button>
+          <Link to='/aboutme'>
+            <button className={styles.mainsecbtn}>{t('aboutme')}</button>
           </Link> 
         </div>
       </div>

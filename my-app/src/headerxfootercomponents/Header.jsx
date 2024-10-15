@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
-import imgLogo from '../style/logo page.png';
+import imgLogo from '../style/logoV2.png';
 import styles from '../header.module.css';
 import ChangeLanguage from '../components/ChangeLanguage';
 

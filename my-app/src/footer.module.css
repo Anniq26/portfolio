@@ -19,7 +19,7 @@
 
 /* footer info */
 .info{
-    font-family: Ubuntu sans-serif;
+    font-family: 'roboto slab', sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 27.58px;
@@ -36,7 +36,7 @@
     gap: 15px;
 }
 .contacttitle{
-    font-family: Ubuntu sans-serif;
+    font-family: 'roboto slab', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 27.58px;
@@ -46,9 +46,10 @@
 
 .contactsinfo{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 15px;
-    font-family: Ubuntu sans-serif;
+    font-family: 'roboto slab', sans-serif;
     font-size: 24px;
     font-weight: 300;
     line-height: 27.58px;
@@ -87,5 +88,14 @@
         flex-direction: column;
         gap: 25px;
     }
+    .contactsinfo{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+        font-size: 21px;
 
+    }
 }

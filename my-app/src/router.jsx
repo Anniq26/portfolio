@@ -30,6 +30,7 @@ const router = [
                 element: <Contacts />,
                 path: '/contacts',
             },
+
         ]
     }
 ];
