@@ -80,22 +80,70 @@
 @media screen and (max-width: 1000px){
     .footercontainer{
         display: flex;
-        max-width: 1000px;
+        max-width: 767px;
+        width: 100%;
         height: auto;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
     }
+    
+    .info{
+        font-family: 'roboto slab', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+        color: #ffffff;
+    }
+    
+    .contactswrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        gap: 15px;
+    }
+
+
+    .contacttitle{
+        font-family: 'roboto slab', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+    }
+
     .contactsinfo{
         max-width: 100%;
-        width: 100%;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        padding: 0;
-        font-size: 21px;
-
+        gap: 10px;
+        font-family: 'roboto slab', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
     }
+
+    .imgiconsmainwrapper{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
 }

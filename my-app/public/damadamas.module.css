@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.container {
+    max-width: 1443px;
+    margin: 0 auto;
+}
+
+header {
+        background-color:  #FB3F5C;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 23px;
+    padding-bottom: 27px; 
+    margin-bottom: 100px;
+}
+
+.navigation {
+    display: flex;
+    gap: 52px;
+}
+
+.nav-link {
+    color: #F8EEEF;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.74px;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: #000;
+}
+
+/* section 1 */
+
+.first-sec-content {
+    display: flex;
+    align-items: center;
+    gap: 283.29px;
+    max-width: 1220px;
+    max-height: 541px;
+}
+
+
+
+.hello-text {
+    color: #000;
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.19px;
+}
+
+.first-text {
+    color: #191018;
+    font-family: Nunito;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65.1px;
+    text-transform: capitalize;
+}
+
+.first-text span {
+    color: #FB3F5C;
+}
+
+.secondary-text {
+    color: #191018;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.74px;
+    letter-spacing: 1.44px;
+
+}
+#myText-first {
+    width: 480px;
+    height: 144px;
+}
+
+.button{
+    color: #F8EEEF;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.28px;
+    background-color: #FB3F5C;
+    border-radius: 18px;
+    padding: 19px 57px;
+    text-decoration: none;
+    border: 1px solid #FB3F5C;
+}
+
+.button:hover {
+    background-color: #F8EEEF; 
+    color: #FB3F5C;
+}
+
+.img {
+    background-image: url(./style/Rectangle\ 396.png);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    padding: 54px 70px 81px 110px ;
+}
+
+.section-first {
+    margin-bottom: 230px;
+}
+
+/* section 2 */
+
+.second-sec-content {
+    display: flex;
+    gap: 228.24px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 216px;
+}
+
+.second-sec-text {
+    display: flex;
+    flex-direction: column;
+    width: 611px;
+}
+
+#myText-second {
+
+    margin-bottom: 48px;
+}
+
+.second-title  {
+
+color: #191018;
+font-family: Nunito;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 65.47px;
+text-transform: capitalize;
+margin-bottom: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 39px;
+    margin-bottom: 66px;
+}
+
+#button-second {
+    background-color: #F8EEEF; 
+    color: #FB3F5C;
+}
+#button-second:hover {
+    color: #F8EEEF;
+    background-color: #FB3F5C;
+}
+
+.progresses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 70px;
+}
+
+.progress {
+    height: 25px;
+    background-color: #C4C4C4;
+    position:relative;
+    width: 214px;
+
+}
+
+.img-progress {
+    display: flex;
+    gap: 15.35px;
+    align-items: center;
+}
+
+.progress-bar {
+    position:absolute;
+    height: 100%;
+    background-color: #FB3F5C;
+    text-align: end;
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.1px;
+}
+
+#bar1 {
+    width: 70%;
+}
+#bar2 {
+    width: 50%;
+}
+#bar3 {
+    width: 80%;
+}
+
+/* section 3 */
+
+.third-section {
+    display: flex;
+    justify-content: center;
+    gap: 76px;
+    background-color: #FEC5CE;
+    height: 244px;
+    align-items: center;
+    margin-bottom: 143px;
+    }
+    
+.projects-info p {
+    color: #191018;
+    font-family: Nunito sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.1px;
+    font-style: normal;
+    text-align: center;
+        
+
+ }
+.projects-info p:first-child {
+    font-weight: 700px;
+    font-size: 48px;
+}
+
+
+/* section 4 */
+#latest-work-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 74px;
+    
+}
+        
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 45px;
+    margin-bottom: 47px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h3 {
+    color: #2D2D2D;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+h4 {
+    color:#2D2D2D;
+    font-family: Nunito Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+
+/* footer */
+
+#icon {
+    width: 24px;
+    height: 22.5px;
+}
+
+.footer {
+    background: rgba(251, 63, 92, 0.90);
+    min-height: 232px;
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+    
+}
+.contact a {
+    color: #F8EEEF;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.contact img {
+width: 24px; 
+height: 22px;
+margin-right: 18px;
+}
+
+.contact a:not(:last-child){
+border-right: 4px solid #fff; 
+padding: 17px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.soc-icon {
+    Width: 24.15px;
+    Height: 22.31px;
+    
+}

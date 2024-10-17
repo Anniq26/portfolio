@@ -13,9 +13,9 @@ const MainPage = () => {
   const { t } = useTranslation()
 
   const projects = [
-    {path: '/', label: t('project1') , image: ImgPrjOne },
-    {path: '/', label: t('project2') , image: ImgPrjTwo },
-    {path: '/', label: t('project3') , image: ImgPrjThree }
+    { path: 'https://github.com/Anniq26/Project', label: t('project1'), image: ImgPrjOne },
+    { path: '/bonhotelp1.html', label: t('project2'), image: ImgPrjTwo },
+    { path: '/damadamas.html', label: t('project3'), image: ImgPrjThree },
   ]
 
   return (
@@ -39,11 +39,14 @@ const MainPage = () => {
       <h2 className={styles.secondarytitle}>{t('recent')}</h2>
       <div className={styles.cardswrapper}>
       {projects.map(({path, label, image}) => (
-        <div className={styles.cardstyle}>
+        <Link to={path} className={styles.cardstyle}
+        onClick={(e) =>{    e.preventDefault(); 
+          window.location.assign(path);
+        }}>
           <img className={styles.cardimg} src={image} alt="img" />
           <div className={styles.overlay}></div>
           <h3 className={styles.cardtitle}>{label}</h3>
-        </div>
+        </Link>
       ))}
       </div>
       <div className={styles.buttonwrapper}>

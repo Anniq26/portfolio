@@ -27,8 +27,7 @@ const AboutMe = () => {
     {title: t('Age'), label: t('AgeinNumbers')},
     {title: t('Freelance'), label: t('Available')},
     {title: t('Address'), label: t('AddressDetail')},
-    {title: t('Languages'), label: t('Georgian','English','Russian')},
-    {title: t('phone'), label: '+995 551 11 56 76', path: '/contacts'},
+    {title: t('Languages'), label: `${t('Georgian')}, ${t('English')}, ${t('Russian')}`},    {title: t('phone'), label: '+995 551 11 56 76', path: '/contacts'},
     {title: t('e-post'), label: 'aniqitoshvili2012@gmail.com', path: '/contacts'},
   ]
 

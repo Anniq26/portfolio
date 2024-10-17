@@ -212,29 +212,115 @@
     -webkit-text-fill-color: transparent;   
 }
 
-@media screen and (max-width: 1000px) {
-    .mainpagewrapper,
-    .mainsection  {
-        max-width: 500px;
+
+@media screen and (max-width: 767px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      
+      }
+      .mainpagewrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        max-width: 767px;
         width: 100%;
         height: auto;
+    }
+
+    .mainsection {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        max-width: 767px;
+        width: 100%;
+        height: auto;
+        box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+        border: solid 1px #0000004d;
+        border-radius: 15px;
+        gap: 50px;
+        background-color: #ffffff25;
+        
+    }
+    .imgmainstyle{
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .mainsectitles{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    .maintitle {
+        width: 100%;
+        height: auto;
+        font-family: 'roboto slab', sans-serif;
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 91.92px;
+        text-align: center;
+        background: linear-gradient(60deg, #8b663c, #ecdf90, #8b663c); /* Gradient from dark brown to light yellow and back */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+    }
+    
+    .secondarytitle{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } 
-    .maintitle{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .imgmainstyle{
-        max-width: 50%;
+        max-width: 767px;
         width: 100%;
         height: auto;
+        font-family: 'roboto slab', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 80px;
+        text-align: center;
+        text-shadow: 5px 8px 10px #3f3225;
     }
+
+    .mainsecbtn{
+        max-width: 280px;
+        width: 100%;
+        max-height: 76px;
+        height: auto;
+        padding: 5px 45px;
+        background: linear-gradient(60deg, #8b663c, #ecdf90, #8b663c);
+        border-radius: 15px;
+        border: solid 1px #C7AE6A;
+        color: #ffffff;
+        font-family: 'roboto slab', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 27.58px;
+        cursor: pointer;
+    }
+
+    .cardssection{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        gap: 50px;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
     .cardswrapper{
         width: 100%;
         height: auto;
@@ -242,20 +328,45 @@
         flex-wrap: wrap;
         gap: 40px;
         justify-content: center;
+        align-items: center;
     }
-    .secondarytitle{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
+
+
+    .cardstyle{
+        max-width: 500px;
         width: 100%;
         height: auto;
-        font-family: 'roboto slab', sans-serif;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 40px;
-        text-align: center;
-        text-shadow: 5px 8px 15px #3f3225;
-        justify-content: center;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        border: solid 1px #000;
+        border-radius: 10px ;
+        box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
     }
+
+    .cardimg{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px ;
+    }
+
+    .cardtitle{
+        position: absolute;
+        bottom: 57px;
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        align-items: center;
+        width: 100%;
+        color: #FFF;
+        font-family: 'roboto slab', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 10px ;
+    }
+
 }

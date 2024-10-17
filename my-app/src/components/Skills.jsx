@@ -7,7 +7,7 @@ const Skills = () => {
     const { t } = useTranslation()
 
     const Skills = [
-        {skill: 'React', know: '50%'},
+        {skill: 'React', know: '60%'},
         {skill: 'JavaScript', know: '50%'},
         {skill: 'HTML', know: '70%'},
         {skill: 'CSS', know: '70%'},

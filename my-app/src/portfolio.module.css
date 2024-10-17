@@ -9,7 +9,6 @@
     display: flex;
     max-width: 1920px;
     width: 100%;
-    max-height: 100vh;
     height: auto;
     flex-direction: column;
     flex-wrap: wrap;
@@ -39,6 +38,7 @@
     flex-direction: row;
     gap: 30px;
     align-items: center;
+    justify-content: center;
 }
 .cardswrp{
     display: flex;
@@ -97,4 +97,89 @@
 .cardswrp:hover .overlay,
 .cardswrp:hover .cardtitle {
     opacity: 0; /* Fade out overlay and title on hover */
+}
+
+
+@media screen and (max-width: 767px) {
+    .prtfwrp{
+        display: flex;
+        max-width: 767px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: 'roboto slab', sans-serif;
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 80px;
+        text-align: center;
+        background: linear-gradient(60deg, #8b663c, #ecdf90, #8b663c); /* Gradient from dark brown to light yellow and back */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+    }
+
+
+    .cardsmnwrp{
+        max-width: 767px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardswrp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-wrap: wrap;
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        gap: 5px;
+    }
+
+    .cardimg{
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px ;
+        transition: transform 0.3s ease;
+    }
+
+    .cardtitle{
+        position: absolute;
+        bottom: 57px;
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        align-items: center;
+        width: 100%;
+        color: #FFF;
+        font-family: 'roboto slab', sans-serif;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 10px ;
+    
+    }
 }

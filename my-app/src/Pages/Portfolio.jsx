@@ -10,9 +10,9 @@ const Portfolio = () => {
   const { t } = useTranslation();
   
   const projects = [
-    { path: '#', label: t('project1'), image: ImgPrjOne },
-    { path: '#', label: t('project2'), image: ImgPrjTwo },
-    { path: '#', label: t('project3'), image: ImgPrjThree },
+    { path: 'https://github.com/Anniq26/Project', label: t('project1'), image: ImgPrjOne },
+    { path: '/bonhotelp1.html', label: t('project2'), image: ImgPrjTwo },
+    { path: '/damadamas.html', label: t('project3'), image: ImgPrjThree },
   ];
 
   return (
@@ -20,7 +20,10 @@ const Portfolio = () => {
       <h2 className={styles.title}>{t('portfolio')}</h2>
       <div className={styles.cardsmnwrp}>
         {projects.map(({ path, label, image }) => (
-          <Link key={label} to={path} className={styles.cardswrp}> {/* Added key and path */}
+          <Link key={label} to={path} className={styles.cardswrp} 
+          onClick={(e) =>{    e.preventDefault(); // Prevent default behavior
+            window.location.assign(path); // Navigate to the external HTML file
+          }}> {/* Added key and path */}
             <img className={styles.cardimg} src={image} alt={label} /> {/* Updated alt text */}
             <div className={styles.overlay}></div>
             <h3 className={styles.cardtitle}>{label}</h3>
