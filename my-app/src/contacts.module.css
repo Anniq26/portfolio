@@ -105,7 +105,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px)  {
   * {
     padding: 0;
     margin: 0;
@@ -113,4 +113,103 @@
     overflow-x: hidden;
   
   }
+  .pagewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 767px;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+    border: solid 1px #0000004d;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 20px;
+    background-color: #ffffff25;
+  }
+  .titleswrp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'roboto slab', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    background: linear-gradient(60deg, #8b663c, #ecdf90, #8b663c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    text-shadow: 5px 8px 15px rgba(0, 0, 0, 0.63);
+  }
+
+  .infowrp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .linkswrp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 20px; 
+  }
+  
+  .imgswrp {
+    max-width: 300px; 
+    width: 100%; 
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .imgstyle {
+    width: auto;
+    height: auto;
+    max-height: 100px;
+  }
+  
+  .txtstyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    font-family: 'roboto slab', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    height: auto;
+    color: black;
+    text-decoration: none;
+  }
+
 }

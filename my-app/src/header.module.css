@@ -6,6 +6,7 @@
 
 .headerwrapper {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     margin-bottom: 50px;
@@ -17,10 +18,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    padding: 5px 110px;
+    padding: 25px 110px;
     background-color: #000;
 }
 .imglogo{
@@ -31,9 +33,10 @@
 .linkscontainer{
     display: flex;
     flex-direction: row;
-    width: hug(653px)px;
+    max-width: 653px;
+    width: 100%;
     height: 28px;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
 }
 .linkswrapper{
@@ -55,8 +58,10 @@
     height: auto;
 }
 .chlimg {
+    max-width: 100px;
     width: 100%;
     height: auto;
+    min-width: 30px;
 }
 
 
