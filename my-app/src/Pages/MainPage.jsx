@@ -39,10 +39,7 @@ const MainPage = () => {
       <h2 className={styles.secondarytitle}>{t('recent')}</h2>
       <div className={styles.cardswrapper}>
       {projects.map(({path, label, image}) => (
-        <Link to={path} className={styles.cardstyle}
-        onClick={(e) =>{    e.preventDefault(); 
-          window.location.assign(path);
-        }}>
+        <Link to={path} className={styles.cardstyle}>
           <img className={styles.cardimg} src={image} alt="img" />
           <div className={styles.overlay}></div>
           <h3 className={styles.cardtitle}>{label}</h3>

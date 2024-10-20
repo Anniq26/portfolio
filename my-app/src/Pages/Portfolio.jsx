@@ -20,10 +20,7 @@ const Portfolio = () => {
       <h2 className={styles.title}>{t('portfolio')}</h2>
       <div className={styles.cardsmnwrp}>
         {projects.map(({ path, label, image }) => (
-          <Link key={label} to={path} className={styles.cardswrp} 
-          onClick={(e) =>{    e.preventDefault(); // Prevent default behavior
-            window.location.assign(path); // Navigate to the external HTML file
-          }}> {/* Added key and path */}
+          <Link key={label} to={path} className={styles.cardswrp}> 
             <img className={styles.cardimg} src={image} alt={label} /> {/* Updated alt text */}
             <div className={styles.overlay}></div>
             <h3 className={styles.cardtitle}>{label}</h3>
