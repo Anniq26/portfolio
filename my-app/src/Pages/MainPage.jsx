@@ -14,8 +14,8 @@ const MainPage = () => {
 
   const projects = [
     { path: 'https://github.com/Anniq26/Project', label: t('project1'), image: ImgPrjOne },
-    { path: '/bonhotelp1.html', label: t('project2'), image: ImgPrjTwo },
-    { path: '/damadamas.html', label: t('project3'), image: ImgPrjThree },
+    { path: '/bonhotelpg1', label: t('project2'), image: ImgPrjTwo },
+    { path: '/damadamas', label: t('project3'), image: ImgPrjThree },
   ]
 
   return (

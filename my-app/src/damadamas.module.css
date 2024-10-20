@@ -6,23 +6,25 @@
 
 /* header */
 .container {
-    max-width: 1650px;
+    max-width: 1920px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     height: auto;
-    margin: 0 auto;
 }
 
-header {
-        background-color:  #FB3F5C;
-}
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 23px;
-    padding-bottom: 27px; 
-    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+    padding: 30px 70px;
+    background-color:  #FB3F5C;
+
 }
 
 .navigation {
@@ -30,7 +32,7 @@ header {
     gap: 52px;
 }
 
-.nav-link {
+.navlink {
     color: #F8EEEF;
     font-family: Nunito Sans;
     font-size: 24px;
@@ -39,24 +41,46 @@ header {
     line-height: 32.74px;
     text-decoration: none;
 }
-.nav-link:hover {
+.navlink:hover {
     color: #000;
 }
 
 /* section 1 */
 
-.first-sec-content {
+.containerwrapper{
     display: flex;
+    max-width: 1920px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 283.29px;
+}
+
+.firstseccontent {
+    display: flex;
+    justify-content: center;
+    gap: 228.24px;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    max-height: auto;
+    height: auto;
+}
+
+.firstsectext{
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 
-
-.hello-text {
+.hellotext {
     color: #000;
     font-family: Nunito Sans;
     font-size: 28px;
@@ -65,7 +89,7 @@ header {
     line-height: 38.19px;
 }
 
-.first-text {
+.firsttext {
     color: #191018;
     font-family: Nunito;
     font-size: 50px;
@@ -75,11 +99,11 @@ header {
     text-transform: capitalize;
 }
 
-.first-text span {
+.firsttext span {
     color: #FB3F5C;
 }
 
-.secondary-text {
+.secondarytext {
     color: #191018;
     font-family: Nunito Sans;
     font-size: 24px;
@@ -118,7 +142,7 @@ header {
     max-width: fit-content;
     width: 100%;
     height: auto;
-    background-image: url(./style/Rectangle\ 396.png);
+    background-image: url(./style/Rectangle\ 397.png);
     background-repeat: no-repeat;
     background-position: inherit; /* Use center for better positioning */
     background-size: cover;
@@ -126,13 +150,21 @@ header {
     box-sizing: border-box; /* Include padding in the total width */
 }
 
-.section-first {
-    margin-bottom: 230px;
+.sectionfirst {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 100px;
 }
 
 /* section 2 */
 
-.second-sec-content {
+.secondseccontent {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -141,13 +173,15 @@ header {
     gap: 228.24px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 216px;
+    margin-bottom: 200px;
 }
 
-.second-sec-text {
+.secondsectext {
     display: flex;
     flex-direction: column;
-    max-width: 611px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    gap: 25px;
     width: 100%;
     height: auto;
 }
@@ -161,7 +195,7 @@ header {
     margin-bottom: 48px;
 }
 
-.second-title  {
+.secondtitle  {
 
 color: #191018;
 font-family: Nunito;
@@ -197,48 +231,45 @@ margin-bottom: 16px;
     gap: 14px 70px;
 }
 
-
 .progress {
     height: 25px;
     background-color: #C4C4C4;
-    position:relative;
+    position: relative;
     width: 214px;
-
 }
 
-
-.img-progress {
+.imgprogress {
     display: flex;
     gap: 15.35px;
     align-items: center;
 }
-.progress-bar {
-    position:absolute;
+
+.progressbar {
+    position: absolute;
     height: 100%;
     background-color: #FB3F5C;
     text-align: end;
     color: #FFF;
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 19.1px;
+    padding-right: 8px;
 }
 
-
-#bar1 {
+.bar1 {
     width: 70%;
 }
-#bar2 {
+
+.bar2 {
     width: 50%;
 }
-#bar3 {
+
+.bar3 {
     width: 80%;
 }
 
-/* section 3 */
-
-.third-section {
+.thirdsection {
     display: flex;
     justify-content: center;
     gap: 76px;
@@ -248,7 +279,7 @@ margin-bottom: 16px;
     margin-bottom: 143px;
     }
     
-.projects-info p {
+.projectsinfo p {
     color: #191018;
     font-family: Nunito sans;
     font-size: 36px;
@@ -259,14 +290,22 @@ margin-bottom: 16px;
         
 
  }
-.projects-info p:first-child {
+.projectsinfo p:first-child {
     font-weight: 700px;
     font-size: 48px;
 }
 
 
 /* section 4 */
-#latest-work-title {
+.thirdsecwrapper{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#latestworktitle {
     display: flex;
     justify-content: center;
     margin-bottom: 74px;
@@ -277,8 +316,10 @@ margin-bottom: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px 45px;
-    margin-bottom: 47px;
+    align-items: center;
+    max-width: 1300px;
+    height: auto;
+    gap: 70px;
 }
 
 .card {
@@ -287,7 +328,7 @@ margin-bottom: 16px;
     gap: 25px;
 }
 
-.card-titles {
+.cardtitles {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -362,7 +403,7 @@ padding: 17px;
     
 }
 
-.soc-icon {
+.socicon {
     Width: 24.15px;
     Height: 22.31px;
     
@@ -409,7 +450,7 @@ padding: 17px;
         gap: 20px;
     }
     
-    .nav-link {
+    .navlink {
         display: flex;
         width: 100%;
         height: auto;
@@ -426,7 +467,7 @@ padding: 17px;
         text-decoration: none;
     }
 
-    .section-first {
+    .sectionfirst {
         display: flex;
         max-width: 767px;
         width: 100%;
@@ -440,7 +481,7 @@ padding: 17px;
         margin-top: 30px;
     }
 
-    .first-sec-content {
+    .firstseccontent {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -452,7 +493,7 @@ padding: 17px;
         max-height: auto;
     }
 
-    .first-sec-text{
+    .firstsectext{
         display: flex;
         width: 100%;
         height: auto;
@@ -464,7 +505,7 @@ padding: 17px;
         padding: 10px;
     }
     
-    .hello-text {
+    .hellotext {
         display: flex;
         width: 100%;
         height: auto;
@@ -478,7 +519,7 @@ padding: 17px;
         line-height: 38.19px;
     }
 
-    .first-text {
+    .firsttext {
         display: flex;
         width: 100%;
         height: auto;
@@ -494,7 +535,7 @@ padding: 17px;
         text-transform: capitalize;
     }
 
-    .secondary-text {
+    .secondarytext {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -555,7 +596,7 @@ padding: 17px;
     }
     
 
-    .second-sec-content {
+    .secondseccontent {
         display: flex;
         max-width: 700px;
         width: 100%;
@@ -572,7 +613,7 @@ padding: 17px;
         height: auto;
     }
 
-    .second-sec-text {
+    .secondsectext {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -582,7 +623,7 @@ padding: 17px;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .second-title  {
+    .secondtitle  {
         display: flex;
         width: 100%;
         height: auto;
@@ -619,7 +660,7 @@ padding: 17px;
             gap: 50px;
         }
 
-        .img-progress {
+        .imgprogress {
             display: flex;
             max-width: 767px;
             width: 40%;
@@ -640,7 +681,7 @@ padding: 17px;
             flex-wrap: wrap;
         }
 
-        .third-section {
+        .thirdsection {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -654,7 +695,7 @@ padding: 17px;
         }
 
 
-        .projects-info p {
+        .projectsinfo p {
             width: 100%;
             height: auto;
             display: flex;
@@ -671,12 +712,12 @@ padding: 17px;
                 
         
          }
-        .projects-info p:first-child {
+        .projectsinfo p:first-child {
             font-weight: 700px;
             font-size: 40px;
         }
 
-        #latest-work-title {
+        #latestworktitle {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -770,7 +811,7 @@ padding: 17px;
             
         }
         
-        .soc-icon {
+        .socicon {
             max-width: 24.15px;
             width: 100%;
             max-Height: 22.31px;
